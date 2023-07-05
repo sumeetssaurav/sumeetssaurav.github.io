@@ -427,19 +427,25 @@
                                 <button type="button"
                                     class="btn btn-primary btn-xs"><a class="conf"
                                         target="_blank"
-                                        href="">PDF</a></button>
+                                        href="publication/Website_ArchGym_ISCA2023.pdf">PDF</a></button>
                                 <button type="button"
                                     class="btn btn-danger btn-xs"><a class="conf"
                                         target="_blank"
-                                        href="">Slides</a></button>
+                                        href="https://bit.ly/ArchGym">Code</a></button>
                                 <p></p>
                                 <div id="isca23-abs" class="collapse">
                                     <info>
-                                       
+                                        Machine learning (ML) has become a prevalent approach to tame the complexity of design space exploration for domain-specific architectures. While appealing, using ML for design space exploration poses several challenges. First, it is not straightforward to identify the most suitable algorithm from an ever-increasing pool of ML methods. Second, assessing the trade-offs between performance and sample efficiency across these methods is inconclusive. Finally, the lack of a holistic framework for fair, reproducible, and objective comparison across these methods hinders the progress of adopting ML-aided architecture design space exploration and impedes creating repeatable artifacts. To mitigate these challenges, we introduce ArchGym, an open-source gymnasium and easy-to-extend framework that connects a diverse range of search algorithms to architecture simulators. To demonstrate its utility, we evaluate ArchGym across multiple vanilla and domain-specific search algorithms in the design of a custom memory controller, deep neural network accelerators, and a custom SoC for AR/VR workloads, collectively encompassing over 21K experiments. The results suggest that with an unlimited number of samples, ML algorithms are equally favorable to meet the user-defined target specification if its hyperparameters are tuned thoroughly; no one solution is necessarily better than another (e.g., reinforcement learning vs. Bayesian methods). We coin the term "hyperparameter lottery" to describe the relatively probable chance for a search algorithm to find an optimal design provided meticulously selected hyperparameters. Additionally, the ease of data collection and aggregation in ArchGym facilitates research in ML-aided architecture design space exploration. As a case study, we show this advantage by developing a proxy cost model with an RMSE of 0.61% that offers a 2,000-fold reduction in simulation time. Code and data for ArchGym is available at https://bit.ly/ArchGym.
                                     </info>
                                 </div>
                                 <div id="isca23-bib" class="collapse">
-                                    
+                                    @inproceedings{krishnan2023archgym,
+                                        title={ArchGym: An Open-Source Gymnasium for Machine Learning Assisted Architecture Design},
+                                        author={Krishnan, Srivatsan and Yazdanbakhsh, Amir and Prakash, Shvetank and Jabbour, Jason and Uchendu, Ikechukwu and Ghosh, Susobhan and Boroujerdian, Behzad and Richins, Daniel and Tripathy, Devashree and Faust, Aleksandra and others},
+                                        booktitle={Proceedings of the 50th Annual International Symposium on Computer Architecture},
+                                        pages={1--16},
+                                        year={2023}
+                                      }
                                 </div>
                             </td>
                         </tr>
@@ -878,6 +884,8 @@
                     <button type="button" class="btn btn-info btn-xs" data-target="#TECS22-bib" data-toggle="collapse">Bib</button>
                     <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank"
                             href="publication/FARSI_TECS_CameraReady.pdf">PDF</a></button>
+                    <button type="button" class="btn btn-danger btn-xs"><a class="conf" target="_blank"
+                        href="https://github.com/facebookresearch/Project_FARSI">Code</a></button>
                     <p></p>
                     <div id="TECS22-abs" class="collapse">
                         <info>
@@ -892,9 +900,16 @@
                     </div>
                     <div id="TECS22-bib" class="collapse">
                         <p class="info">
-                            @Article{
-                            
-                            }
+                            @article{boroujerdian2023farsi,
+                                title={FARSI: An early-stage design space exploration framework to tame the domain-specific system-on-chip complexity},
+                                author={Boroujerdian, Behzad and Jing, Ying and Tripathy, Devashree and Kumar, Amit and Subramanian, Lavanya and Yen, Luke and Lee, Vincent and Venkatesan, Vivek and Jindal, Amit and Shearer, Robert and others},
+                                journal={ACM Transactions on Embedded Computing Systems},
+                                volume={22},
+                                number={2},
+                                pages={1--35},
+                                year={2023},
+                                publisher={ACM New York, NY}
+                              }
                 
                         </p>
                     </div>
